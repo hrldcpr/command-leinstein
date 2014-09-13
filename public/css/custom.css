@@ -1,11 +1,31 @@
+/* index */
+
+h1 {
+  color: steelblue;
+}
+
+.centered-container {
+  width: 100%;
+  text-align: center;
+}
+
+.dendrogram {
+  background-color: #EEE;
+  border-color: steelblue;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+/* svg elements */
+
 .node circle {
-  fill: #fff;
+  fill: white;
   stroke: steelblue;
   stroke-width: 1.5px;
 }
 
 .node {
-  font: 10px sans-serif;
+  font: 10px;
 }
 
 .link {

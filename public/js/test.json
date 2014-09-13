@@ -8,15 +8,15 @@
                "name":"Celebrations",
                "children":[  
                   {  
-                     "name":"Excited Oprah Shouting",
+                     "name":"Balloons",
                      "size": 1
                   },
                   {
-                     "name":"Andy Confetti Parks and Rec",
+                     "name":"Confetti",
                      "size": 1
                   },
                   {  
-                     "name":"Cheerleading Pikachu",
+                     "name":"Cheerleader",
                      "size": 1
                   }
                ]
@@ -25,23 +25,19 @@
                "name":"Animals",
                "children":[  
                   {  
-                     "name":"Sleepy Kitten",
+                     "name":"Kitten",
                      "size": 1
                   },
                   {  
-                     "name":"Dachshund on Skateboard",
+                     "name":"Dachshund",
                      "size": 1
                   },
                   {  
-                     "name":"Horse on Ice",
+                     "name":"Horse",
                      "size": 1
                   },
                   {  
-                     "name":"French Bulldog Jumping into Arms",
-                     "size": 1
-                  },
-                  {  
-                     "name":"SpanningTree",
+                     "name":"Bulldog",
                      "size": 1
                   }
                ]
@@ -50,7 +46,7 @@
                "name":"Robots",
                "children":[  
                   {  
-                     "name":"Military Dog",
+                     "name":"Aibo",
                      "size": 1
                   },
                   {
@@ -65,7 +61,7 @@
          "name":"Pictures",
          "children":[  
             {  
-               "name":"U.S. Virgin Islands",
+               "name":"Cacun",
                "children":[  
                   {  
                      "name":"Beach",
@@ -76,7 +72,7 @@
                      "size": 1
                   },
                   {  
-                     "name":"Pina Colada",
+                     "name":"Drinks",
                      "size": 1
                   }
                ]
@@ -95,10 +91,6 @@
                   {  
                      "name":"Seal",
                      "size": 1
-                  },
-                  {  
-                     "name":"Torrey Pines State Park",
-                     "size": 1
                   }
                ]
             },
@@ -110,7 +102,7 @@
                      "size": 1
                   },
                   {
-                     "name":"Ski Lift",
+                     "name":"Skiing",
                      "size": 1
                   }
                ]

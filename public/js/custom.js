@@ -1,16 +1,15 @@
 $(function() {
 
-  var width = 800,
-      height = 800;
+  var width = 1000,
+      height = 600;
 
   var cluster = d3.layout.cluster()
       .size([width, height - 75]);
 
 var diagonal = d3.svg.diagonal()
-  // Flip the values here.
   .projection(function(d) { return [d.x, d.y]; });
 
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select(".dendrogram").append("svg")
       .attr("width", width)
       .attr("height", height)
     .append("g")
@@ -36,9 +35,8 @@ var diagonal = d3.svg.diagonal()
         .attr("r", 4.5);
 
     node.append("text")
-        .attr("dx", 2)
-        .attr("dy", function(d) { return d.children ? -8 : 8; })
-        .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+        .attr("dy", "-9")
+        .style("text-anchor", "middle")
         .text(function(d) { return d.name; });
   });
 
