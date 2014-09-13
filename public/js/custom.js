@@ -1,7 +1,7 @@
 $(function() {
 
-  var width = 960,
-      height = 2200;
+  var width = 900,
+      height = 900;
 
   var cluster = d3.layout.cluster()
       .size([height, width - 160]);
@@ -15,7 +15,7 @@ $(function() {
     .append("g")
       .attr("transform", "translate(40,0)");
 
-  d3.json("./test.json", function(error, root) {
+  d3.json("./public/js/test.json", function(error, root) {
     var nodes = cluster.nodes(root),
         links = cluster.links(nodes);
 
