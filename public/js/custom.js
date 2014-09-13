@@ -1,10 +1,10 @@
 $(function() {
 
-  var width = 1000,
-      height = 1000;
+  var width = 800,
+      height = 800;
 
   var cluster = d3.layout.cluster()
-      .size([height, width - 200]);
+      .size([width, height - 75]);
 
 var diagonal = d3.svg.diagonal()
   // Flip the values here.
