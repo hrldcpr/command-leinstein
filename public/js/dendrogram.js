@@ -1,7 +1,7 @@
 $(function() {
 
   var width = 1000,
-      height = 600;
+      height = 550;
 
   var cluster = d3.layout.cluster()
       .size([width, height - 75]);

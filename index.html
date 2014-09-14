@@ -4,18 +4,15 @@
     <!-- libraries -->
     <script src="./public/js/jquery.min.js"></script>
     <script src="./public/js/d3.min.js"></script>
-
     <!-- bootstrap -->
     <link   href="./public/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
     <link   href="./public/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"></link>
     <script src="./public/js/bootstrap.min.js"></script>
-
     <!-- custom scripts -->
-    <script src="./public/js/custom.js"></script>
-
+    <script src="./public/js/dendrogram.js"></script>
+    <script src="./public/js/input.js"></script>
     <!-- custom stlyes -->
     <link   href="./public/css/custom.css" rel="stylesheet" type="text/css"></link>
-    
     <title>Command Line Game</title>
   </head>
   <body>
@@ -23,7 +20,13 @@
       <div class="centered-container">
         <h1>Command Line Game</h1>
         <div class="dendrogram"></div>
-        <!-- gonna put the form here -->
+        <form>
+          <input type="text" name="command" id="command">
+          <input type="submit" value="Submit" class="btn btn-primary" id="submit">
+        </form>
+        <div class="result-container">
+          <p id="result">result will go here</p>
+        </div>
       </div>
     </div>
   </body>
