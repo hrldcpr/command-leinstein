@@ -6,8 +6,8 @@ $(function() {
   var cluster = d3.layout.cluster()
       .size([width, height - 75]);
 
-var diagonal = d3.svg.diagonal()
-  .projection(function(d) { return [d.x, d.y]; });
+  var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.x, d.y]; });
 
   var svg = d3.select(".dendrogram").append("svg")
       .attr("width", width)
