@@ -1,4 +1,4 @@
-command leinstein
-=================
+# Command LEinstein
 
-puzzle game for learning cd, ls, mv, cp, and mkdir
+## Description
+Puzzle game for learning `cd`, `ls`, `mv`, `cp`, and `mkdir`.
