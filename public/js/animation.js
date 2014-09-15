@@ -39,6 +39,8 @@ function setActive(newActive) {
 function cd(name) {
   if (name == "..") {
     setActive(active.parent);
+  } else if (name == ".") {
+    setActive(active);
   } else {
     var child = active.children.filter(function(x) { return x.name == name; });
     setActive(child[0]);
