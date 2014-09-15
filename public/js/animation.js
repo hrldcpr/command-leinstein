@@ -27,9 +27,11 @@ function setActive(newActive) {
   if (active) {
     active.g.removeClass("active");
     active.g.find("circle").attr("r", "4.5");
+    active.g.find("text").attr("dy", "-9");
   }
 
   active = newActive;
+    active.g.find("text").attr("dy", "-16");
   active.g.find("circle").attr("r", "12");
   active.g.addClass("active");
 }

@@ -1,56 +1,56 @@
 {  
-   "name":"Documents",
+   "name":"documents",
    "children":[  
       {  
-         "name":"Gifs",
+         "name":"gifs",
          "children":[  
             {  
-               "name":"Celebrations",
+               "name":"celebrations",
                "children":[  
                   {  
-                     "name":"Balloons",
+                     "name":"balloons",
                      "size": 1
                   },
                   {
-                     "name":"Confetti",
+                     "name":"confetti",
                      "size": 1
                   },
                   {  
-                     "name":"Cheers",
+                     "name":"cheers",
                      "size": 1
                   }
                ]
             },
             {  
-               "name":"Animals",
+               "name":"animals",
                "children":[  
                   {  
-                     "name":"Kitten",
+                     "name":"kitten",
                      "size": 1
                   },
                   {  
-                     "name":"Dachshund",
+                     "name":"dachshund",
                      "size": 1
                   },
                   {  
-                     "name":"Horse",
+                     "name":"horse",
                      "size": 1
                   },
                   {  
-                     "name":"Bulldog",
+                     "name":"bulldog",
                      "size": 1
                   }
                ]
             },
             {  
-               "name":"Robots",
+               "name":"robots",
                "children":[  
                   {  
-                     "name":"Aibo",
+                     "name":"aibo",
                      "size": 1
                   },
                   {
-                     "name":"RTD2",
+                     "name":"r2d2",
                      "size": 1
                   }
                ]
@@ -58,51 +58,51 @@
          ]
       },
       {  
-         "name":"Pictures",
+         "name":"pictures",
          "children":[  
             {  
-               "name":"Portland",
+               "name":"portland",
                "children":[  
                   {  
-                     "name":"Trees",
+                     "name":"trees",
                      "size": 1
                   },
                   {
-                     "name":"Sunset",
+                     "name":"sunset",
                      "size": 1
                   },
                   {  
-                     "name":"Beer",
+                     "name":"beer",
                      "size": 1
                   }
                ]
             },
             {  
-               "name":"Miami",
+               "name":"miami",
                "children":[  
                   {  
-                     "name":"Pier",
+                     "name":"pier",
                      "size": 1
                   },
                   {  
-                     "name":"Sunscreen",
+                     "name":"sunscreen",
                      "size": 1
                   },
                   {  
-                     "name":"Seal",
+                     "name":"seal",
                      "size": 1
                   }
                ]
             },
             {  
-               "name":"Vail",
+               "name":"vail",
                "children":[  
                   {  
-                     "name":"Cabin",
+                     "name":"cabin",
                      "size": 1
                   },
                   {
-                     "name":"Skiing",
+                     "name":"skiing",
                      "size": 1
                   }
                ]
