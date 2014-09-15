@@ -1,35 +1,35 @@
-$(function() {
+var rootDirectory, active, folderName;
 
-  var dirStructure, active, folderName;
+function initDirectoryStructure(root) {
+  rootDirectory = root;
 
-  // fetch json that D3 is using for visualization
-  $.getJSON("./public/js/test.json", function(data) {
-    dirStructure = data;
-  });
-
-  // set active elements
-  function setActive(newActive) {
-    if (active) {
-      active.removeClass("active");
-    }
-    active = newActive;
-    active.find("circle").attr("r", "12");
-    active.addClass("active");
+  $.each(dirStructure, function(i, val) {
   }
 
-  // find file name
-  function fetchFolderName(svgG) {
-    return svgG.find("text").html();
+  setActive(rootDirectory);
+}
+
+// set active elements
+function setActive(newActive) {
+  if (active) {
+    active.removeClass("active");
   }
+  active = newActive;
+  active.find("circle").attr("r", "12");
+  active.addClass("active");
+}
+
+// find file name
+function fetchFolderName(svgG) {
+  return svgG.find("text").html();
+}
+
+function fetchValidFolders(svgG) {
+  var folderName = fetchFolderName(svgG);
+
+}
 
   // start from root dir, make that circle larger and active
-  function initRoot() {
-    if ($("circle").length == 26) {
-      setActive($(".node").first());
-    } else {
-      setTimeout(initRoot, 100);
-    }
-  }
-  initRoot();
 
-});
+
+}

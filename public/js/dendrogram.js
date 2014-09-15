@@ -28,6 +28,7 @@ $(function() {
     var node = svg.selectAll(".node")
         .data(nodes)
       .enter().append("g")
+        .attr("id", function(d) { return "node-" + d.name; })
         .attr("class", "node")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
 
@@ -38,6 +39,9 @@ $(function() {
         .attr("dy", "-9")
         .style("text-anchor", "middle")
         .text(function(d) { return d.name; });
+
+    initDirectoryStructure(root);
+  
   });
 
   d3.select(self.frameElement).style("height", height + "px");
