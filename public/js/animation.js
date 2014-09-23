@@ -37,6 +37,7 @@ function setActive(newActive) {
 }
 
 function cd(name) {
+  controlL();
   if (name == "..") {
     setActive(active.parent);
   } else if (name == ".") {
@@ -58,16 +59,17 @@ function printToScreen(array) {
   $("#print-out").html(html);
 }
 
-function ls(name) {
-  if (name == "." || name === "" || name === undefined) {
+function ls(userInput) {
+  var location = userInput.match(/^ls (.*)/);
+  if (location === null || location[1] == ".") {
     printToScreen(active.children);
-  } else if (name == "..") {
+  } else if (location[1] == "..") {
     printToScreen(active.parent.children);
   } else {
     alert("functionality not built out yet!");
   }
 }
 
-function clearOutput(regex) {
+function controlL() {
   $("#print-out").html("");
 }

@@ -9,14 +9,14 @@ $(function() {
     
     var changeDir = userInput.match(/^cd (.*)/);
     var listDir = userInput.match(/^ls/);
-    var cl = userInput.match(/^clear/);
+    var clear = userInput.match(/^clear/);
 
     if (changeDir) {
       cd(changeDir[1]);
     } else if (listDir) {
-      ls(listDir[1]);
-    } else if (cl) {
-      clearOutput(cl);
+      ls(userInput);
+    } else if (clear) {
+      controlL();
     }
   });
 
