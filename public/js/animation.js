@@ -12,7 +12,7 @@ function initNode(node, parent) {
   node.g = $('#node-' + node.name);
 
   if (node.children) {
-    node.children.forEach(function(child) {
+    node.children.forEach(function (child) {
       initNode(child, node);
     });
   }
@@ -31,7 +31,7 @@ function setActive(newActive) {
   }
 
   active = newActive;
-    active.g.find("text").attr("dy", "-16");
+  active.g.find("text").attr("dy", "-16");
   active.g.find("circle").attr("r", "12");
   active.g.addClass("active");
 }
@@ -42,7 +42,32 @@ function cd(name) {
   } else if (name == ".") {
     setActive(active);
   } else {
-    var child = active.children.filter(function(x) { return x.name == name; });
+    var child = active.children.filter(function (x) {
+        return x.name == name;
+     });
     setActive(child[0]);
   }
+}
+
+function printToScreen(array) {
+  var html = "<ul>";
+  array.forEach(function (item) {
+    html += ("<li>" + item.name + "</li>");
+  });
+  html += "</ul>";
+  $("#print-out").html(html);
+}
+
+function ls(name) {
+  if (name == "." || name === "" || name === undefined) {
+    printToScreen(active.children);
+  } else if (name == "..") {
+    printToScreen(active.parent.children);
+  } else {
+    alert("functionality not built out yet!");
+  }
+}
+
+function clearOutput(regex) {
+  $("#print-out").html("");
 }

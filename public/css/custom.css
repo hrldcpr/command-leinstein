@@ -17,6 +17,15 @@ h1 {
   margin-bottom: 10px;
 }
 
+#print-out {
+  background-color: #EEE;
+  text-align: left;
+  width: 227px;
+  min-height: 20px;
+  display: inline-block;
+  margin: 10px;
+}
+
 /* svg elements */
 
 .node circle {
