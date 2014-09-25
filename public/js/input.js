@@ -10,6 +10,7 @@ $(function() {
     var changeDir = userInput.match(/^cd (.*)/);
     var listDir = userInput.match(/^ls/);
     var clear = userInput.match(/^clear/);
+    var printWorkDir = userInput.match(/^pwd/);
 
     if (changeDir) {
       cd(changeDir[1]);
@@ -17,6 +18,8 @@ $(function() {
       ls(userInput);
     } else if (clear) {
       controlL();
+    } else if (printWorkDir) {
+      pwd();
     }
   });
 

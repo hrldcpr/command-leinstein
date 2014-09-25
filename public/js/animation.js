@@ -70,6 +70,10 @@ function ls(userInput) {
   }
 }
 
+function pwd() {
+  printToScreen([active]);
+}
+
 function controlL() {
   $("#print-out").html("");
 }
