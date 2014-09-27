@@ -17,10 +17,11 @@ $(function() {
 
   d3.json("./public/js/test.json", function(error, root) {
     update(root);
-  }
+  });
 
   function update(source) {
-    var nodes = cluster.nodes(root),
+    var root = source,
+        nodes = cluster.nodes(root),
         linknks = cluster.links(nodes);
 
     var link = svg.selectAll(".link")
