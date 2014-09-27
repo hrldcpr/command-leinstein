@@ -1,34 +1,19 @@
 $(function() {
 
-  var width = 1000,
-      height = 550;
-
-  var cluster = d3.layout.cluster()
-      .size([width, height - 75]);
-
-  var diagonal = d3.svg.diagonal()
-    .projection(function(d) { return [d.x, d.y]; });
-
-  var svg = d3.select(".dendrogram").append("svg")
-      .attr("width", width)
-      .attr("height", height)
-    .append("g")
-      .attr("transform", "translate(0,40)");
-
   d3.json("./public/js/test.json", function(error, root) {
-
     initDirectoryStructure(root);
-    
+  end
+
+  function update(source) {
     var nodes = cluster.nodes(root),
         linknks = cluster.links(nodes);
 
-    // var link = svg.selectAll(".link")
-    //     .data(links);
+    var link = svg.selectAll(".link")
+        .data(links);
     
-    // // link enter  
-    // var linkEnter = link.enter().append("path")
-    //     .attr("class", "link")
-    //     .attr("d", diagonal);
+    var linkEnter = link.enter().append("path")
+        .attr("class", "link")
+        .attr("d", diagonal);
 
     var node = svg.selectAll(".node")
         .data(nodes);
@@ -61,10 +46,6 @@ $(function() {
       .style("fill-opacity", 1e-6);
 
     nodeExit.remove();
-
-  
-  });
-
-  d3.select(self.frameElement).style("height", height + "px");
+  }
 
 });
