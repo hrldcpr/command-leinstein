@@ -16,8 +16,8 @@ $(function() {
       .attr("transform", "translate(0,40)");
 
   d3.json("./public/js/test.json", function(error, root) {
-    initDirectoryStructure(root);
-  end
+    update(root);
+  }
 
   function update(source) {
     var nodes = cluster.nodes(root),
