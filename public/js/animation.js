@@ -38,15 +38,21 @@ function setActive(newActive) {
 
 function cd(name) {
   controlL();
-  if (name == "..") {
+
+  var folders = name.split("/");
+  var firstFolder = folders[0];
+
+  if (firstFolder == "..") {
     setActive(active.parent);
-  } else if (name == ".") {
+  } else if (firstFolder == ".") {
     setActive(active);
   } else {
-    var child = active.children.filter(function (x) {
-        return x.name == name;
-     });
-    setActive(child[0]);
+    folders.forEach(function (folder) {
+      var child = active.children.filter(function (x) {
+          return x.name == folder;
+       });
+      setActive(child[0]);
+    });
   }
 }
 
