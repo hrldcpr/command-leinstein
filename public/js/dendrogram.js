@@ -1,4 +1,4 @@
-var width = 1000,
+var width = 1150,
     height = 550;
 
 var cluster = d3.layout.cluster()

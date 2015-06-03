@@ -1,56 +1,56 @@
 {  
-   "name":"documents",
+   "name":"Home",
    "children":[  
       {  
-         "name":"gifs",
+         "name":"Documents",
          "children":[  
             {  
-               "name":"celebrations",
+               "name":"science",
                "children":[  
                   {  
-                     "name":"balloons",
+                     "name":"thesis",
                      "size": 1
                   },
                   {
-                     "name":"confetti",
-                     "size": 1
-                  },
-                  {  
-                     "name":"cheers",
+                     "name":"experiments",
                      "size": 1
                   }
                ]
             },
             {  
-               "name":"animals",
+               "name":"trips",
                "children":[  
                   {  
-                     "name":"kitten",
+                     "name":"lima",
                      "size": 1
                   },
                   {  
-                     "name":"dachshund",
+                     "name":"mt-fuji",
                      "size": 1
                   },
                   {  
-                     "name":"horse",
+                     "name":"prague",
                      "size": 1
                   },
                   {  
-                     "name":"bulldog",
+                     "name":"rome",
                      "size": 1
                   }
                ]
             },
             {  
-               "name":"robots",
+               "name":"writing",
                "children":[  
                   {  
-                     "name":"aibo",
+                     "name":"articles",
                      "size": 1
                   },
                   {
-                     "name":"r2d2",
+                     "name":"essays",
+                     "size": 1
+                  },
+                  {  
+                     "name":"sketches",
                      "size": 1
                   }
                ]
@@ -58,51 +58,51 @@
          ]
       },
       {  
-         "name":"pictures",
+         "name":"Music",
          "children":[  
             {  
-               "name":"portland",
+               "name":"Amazon",
                "children":[  
                   {  
-                     "name":"trees",
-                     "size": 1
-                  },
-                  {
-                     "name":"sunset",
+                     "name":"Jay-Z",
                      "size": 1
                   },
                   {  
-                     "name":"beer",
+                     "name":"Tove-Lo",
+                     "size": 1
+                  },
+                  {  
+                     "name":"Nick-Jonas",
                      "size": 1
                   }
                ]
             },
             {  
-               "name":"miami",
+               "name":"iTunes",
                "children":[  
                   {  
-                     "name":"pier",
+                     "name":"Albums",
+                     "size": 1
+                  },
+                  {
+                     "name":"Artwork",
                      "size": 1
                   },
                   {  
-                     "name":"sunscreen",
-                     "size": 1
-                  },
-                  {  
-                     "name":"seal",
+                     "name":"Media",
                      "size": 1
                   }
                ]
             },
             {  
-               "name":"vail",
+               "name":"Misc",
                "children":[  
                   {  
-                     "name":"cabin",
+                     "name":"Rihanna",
                      "size": 1
                   },
                   {
-                     "name":"skiing",
+                     "name":"Pitbull",
                      "size": 1
                   }
                ]
